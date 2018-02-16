@@ -1,0 +1,47 @@
+<!--
+   index.html
+   
+-->
+
+<html>
+  <head>
+    <title>MJRoBot Lab Live Streaming</title>
+    <link rel="stylesheet" href='../static/style.css'/>
+    <style>
+		body {
+			text-align: center;
+		}
+    </style>
+  </head>
+  <body>
+    <h1>MJRoBot Lab Live Streaming</h1>
+    <h3><img src="{{ url_for('video_feed') }}" width="80%"></h3>
+	<hr>
+	<h4> PAN:  
+		<a href="/pan/30"class="button">30</a>
+		<a href="/pan/45"class="button">45</a>
+		<a href="/pan/60"class="button">60</a>
+		<a href="/pan/75"class="button">75</a>
+		<a href="/pan/90"class="button">90</a>
+		<a href="/pan/105"class="button">105</a>
+		<a href="/pan/120"class="button">120</a>
+		<a href="/pan/135"class="button">135</a>
+		<a href="/pan/150"class="button">150</a>
+		==> Angle: [ {{ panServoAngle }} ]
+	</h4>
+		<h4> TILT: 
+		<a href="/tilt/30"class="button">30</a>
+		<a href="/tilt/45"class="button">45</a>		
+		<a href="/tilt/60"class="button">60</a>
+		<a href="/tilt/75"class="button">75</a>		
+		<a href="/tilt/90"class="button">90</a>
+		<a href="/tilt/105"class="button">105</a>		
+		<a href="/tilt/120"class="button">120</a>
+		<a href="/tilt/135"class="button">135</a>		
+		<a href="/tilt/150"class="button">150</a>
+		==> Angle: [ {{ tiltServoAngle }} ]
+	</h4>
+	<hr>
+	<p> @2018 Developed by MJRoBot.org</p>
+  </body>
+</html>
